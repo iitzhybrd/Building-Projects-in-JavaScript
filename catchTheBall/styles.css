@@ -1,0 +1,199 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background: hsl(0, 0%, 10%);
+    font-family: "Roboto", sans-serif;
+    color: hsl(0, 0%, 90%);
+  }
+  
+  #ground {
+    float: left;
+  }
+  
+  .circle {
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    position: relative;
+    background: linear-gradient(hsl(280, 50%, 50%), hsl(300, 50%, 50%));
+    background-size: cover;
+    animation: customMovement;
+  }
+  
+  #details {
+    float: right;
+    width: 400px;
+    height: 100vh;
+    position: relative;
+    background: hsl(240, 50%, 60%);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  #title {
+    margin-bottom: 40px;
+  }
+  
+  .instr {
+    margin-bottom: 20px;
+    width: 300px;
+  }
+  
+  #levels {
+    display: flex;
+    justify-content: start;
+    margin: 20px 10px 10px 10px;
+  }
+  
+  #display {
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+  
+  .dyna-title {
+    margin-bottom: 10px;
+  }
+  
+  #score {
+    margin-bottom: 15px;
+  }
+  
+  button {
+    border-radius: 25px;
+    width: 120px;
+    height: 50px;
+    font-size: 20px;
+    border: 2px solid hsl(0, 0%, 100%);
+    background: transparent;
+    margin: 2px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background: hsl(0, 0%, 100%);
+    color: hsl(240, 50%, 60%);
+    transition-duration: 0.5s;
+  }
+  
+  button:active {
+    transform: scale(0.9);
+  }
+  
+  #result {
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+  
+  @keyframes customMovement {
+    0% {
+      left: 0px;
+      top: 0px;
+    }
+  
+    5% {
+      left: 300px;
+      top: 200px;
+    }
+  
+    10% {
+      left: 600px;
+      top: 100px;
+    }
+  
+    15% {
+      left: 600px;
+      top: 600px;
+    }
+  
+    20% {
+      left: 300px;
+      top: 600px;
+    }
+  
+    25% {
+      left: 600px;
+      top: 400px;
+    }
+  
+    30% {
+      left: 100px;
+      top: 0px;
+    }
+  
+    35% {
+      left: 600px;
+      top: 200px;
+    }
+  
+    40% {
+      left: 100px;
+      top: 500px;
+    }
+  
+    45% {
+      left: 0px;
+      top: 600px;
+    }
+  
+    50% {
+      left: 600px;
+      top: 600px;
+    }
+  
+    55% {
+      left: 300px;
+      top: 200px;
+    }
+  
+    60% {
+      left: 600px;
+      top: 100px;
+    }
+  
+    65% {
+      left: 800px;
+      top: 600px;
+    }
+  
+    70% {
+      left: 300px;
+      top: 600px;
+    }
+  
+    75% {
+      left: 600px;
+      top: 400px;
+    }
+  
+    80% {
+      left: 100px;
+      top: 0px;
+    }
+  
+    85% {
+      left: 600px;
+      top: 200px;
+    }
+  
+    90% {
+      left: 100px;
+      top: 500px;
+    }
+  
+    95% {
+      left: 0px;
+      top: 600px;
+    }
+  
+    100% {
+      left: 600px;
+      top: 200px;
+   }
+ }

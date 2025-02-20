@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Catch The Ball</title>
+</head>
+<body>
+    <div id="ground">
+        <div id="head" onclick="cound()"></div>
+    </div>
+    <div id="details">
+        <h1 id="title">Catch The Ball</h1>
+        <h2 class="instr">
+            Click on the ball 5 times before the timer runs out ot win
+        </h2>
+        <h3 id="instr">Click on a difficulty to start the game</h3>
+        <div id="levels">
+            <button onclick="easy()">EASY</button>
+            <button onclick="medium()">MEDIUM</button>
+            <button onclick="hard()">HARD</button>
+        </div>
+        <div id="display">
+            <h2 class="dyna-title">Score</h2>
+            <h3 id="score">0</h3>
+            <h2 class="dyna-title">Time Left</h2>
+            <h3 id="time">?</h3>
+        </div>
+        <button onclick="reset()">RESET</button>
+        <h1 id="result"></h1>
+    </div>
+</body>
+<script src="./script.js"></script>
+</html>
